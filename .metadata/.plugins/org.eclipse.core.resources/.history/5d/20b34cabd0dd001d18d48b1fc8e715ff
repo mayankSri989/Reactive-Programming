@@ -1,0 +1,16 @@
+package com.learning.mono;
+
+import org.junit.jupiter.api.Test;
+
+import reactor.core.publisher.Mono;
+
+public class MonoFluxTest {
+
+	@Test
+	public void testMono() {
+		Mono<Object> monoString =Mono.just("mayankSri")
+				.then(Mono.error(new RuntimeException("qwe")))
+				.log();
+		monoString.subscribe(System.out::println);
+	}
+}

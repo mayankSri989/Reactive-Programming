@@ -1,0 +1,5 @@
+package com.learning.mono.dao;
+
+public class CustomerDao {
+
+}

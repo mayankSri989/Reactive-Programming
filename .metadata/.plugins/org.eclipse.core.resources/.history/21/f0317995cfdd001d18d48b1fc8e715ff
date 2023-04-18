@@ -1,0 +1,14 @@
+package com.learning.mono;
+
+import org.junit.jupiter.api.Test;
+
+import reactor.core.publisher.Mono;
+
+public class MonoFluxTest {
+
+	@Test
+	public void testMono() {
+		Mono<String> monoString =Mono.just("mayankSri");
+		monoString.subscribe(System.out::println);
+	}
+}

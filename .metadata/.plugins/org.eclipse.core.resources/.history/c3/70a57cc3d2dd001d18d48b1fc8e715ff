@@ -1,0 +1,5 @@
+package com.learning.mono.dto;
+
+public class Customer {
+
+}
