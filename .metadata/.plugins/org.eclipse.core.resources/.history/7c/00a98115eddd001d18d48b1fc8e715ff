@@ -1,0 +1,5 @@
+package com.learning.mono.router;
+
+public class RouterConfig {
+
+}
