@@ -41,4 +41,11 @@ public class CustomerDao {
 		.doOnNext(i->System.out.println("processing count"+i))
 		.map(i->new Customer(i,"customer"+i));
 	}
+	
+	public Flux<Customer> getCustomerFunctional() {
+		 return Flux.range(1, 10)
+				 .delayElements(Duration.ofMillis(1000))
+		.doOnNext(i->System.out.println("processing count"+i))
+		.map(i->new Customer(i,"customer"+i));
+	}
 }
